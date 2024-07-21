@@ -1,0 +1,14 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "portfolio",
+  "main": "index.js",
+  "scripts": {
+    "test": "start"
+  },
+  "author": "Joe Lyles",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.4.6"
+  }
+}
