@@ -20,9 +20,9 @@
     hero bg = gray 900
    -->
   <body class="bg-gray-950">
-    <section>
-      <div class="flex mt-10 mx-32">
-        <div class="flex-row">
+    <section class="flex flex-col">
+      <header class="mt-10 mx-auto">
+        <div class="flex-col">
           <p class="font-firacode text-emerald-500 font-semibold text-3xl">
             joe
           </p>
@@ -30,19 +30,51 @@
             lyles
           </p>
         </div>
-        <nav class="w-full content-end">
-          <div class="flex justify-end space-x-24">
-            <a href="" class="font-firacode text-gray-200 tracking-widest"
-              >about</a
+        <nav class="">
+          <div class="flex flex-col my-10">
+            <a
+              href=""
+              class="font-firacode text-gray-200 tracking-widest mx-auto my-3"
             >
-            <a href="" class="font-firacode text-slate-200 tracking-widest"
-              >projects</a
+              about
+            </a>
+            <a
+              href=""
+              class="font-firacode text-gray-200 tracking-widest mx-auto my-3"
             >
-            <a href="" class="font-firacode text-slate-200 tracking-widest"
-              >connect</a
+              projects
+            </a>
+            <a
+              href=""
+              class="font-firacode text-gray-200 tracking-widest mx-auto my-3"
             >
+              connect
+            </a>
           </div>
         </nav>
+      </header>
+    </section>
+    <section>
+      <div class="absolute bg-gray-900 w-full h-96 mt-20">
+        <img
+          class="absolute left-1/2 transform -translate-x-1/2 -top-12 rounded-full"
+          src="../public/images/jl_image_.jpg"
+          alt=""
+          width="300"
+          height="300"
+        />
+        <div class="flex flex-col mt-44">
+          <p
+            class="lowercase font-firacode text-gray-200 font-semibold tracking-wider mx-auto z-10 text-6xl leading-normal"
+          >
+            software
+          </p>
+          <p
+            class="lowercase font-firacode text-gray-200 font-semibold tracking-wider mx-auto z-10 text-6xl"
+          >
+            developer
+          </p>
+        </div>
       </div>
     </section>
   </body>
