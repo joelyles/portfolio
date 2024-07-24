@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -19,7 +19,7 @@
     light text = slate 200
     hero bg = gray 900
    -->
-  <body class="bg-gray-950 scroll-smooth">
+  <body class="bg-gray-950">
     <section class="flex flex-col">
       <header class="mt-10 mx-auto">
         <div class="flex-col">
@@ -33,19 +33,19 @@
         <nav class="">
           <div class="flex flex-col my-10">
             <a
-              href=""
+              href="#about"
               class="font-firacode text-gray-200 tracking-widest mx-auto my-3"
             >
               about
             </a>
             <a
-              href=""
+              href="#projects"
               class="font-firacode text-gray-200 tracking-widest mx-auto my-3"
             >
               projects
             </a>
             <a
-              href=""
+              href="#connect"
               class="font-firacode text-gray-200 tracking-widest mx-auto my-3"
             >
               connect
@@ -54,10 +54,10 @@
         </nav>
       </header>
     </section>
-    <section class="min-h-96">
+    <section class="min-h-96 my-20 sm:my-0">
       <div class="absolute bg-gray-900 w-full h-96 mt-20">
         <img
-          class="absolute left-1/2 transform -translate-x-1/2 -top-12 rounded-full"
+          class="absolute left-1/2 transform -translate-x-1/2 -top-12 rounded-full scale-90 sm:scale-100"
           src="../public/images/jl_image_.jpg"
           alt=""
           width="300"
@@ -65,20 +65,23 @@
         />
         <div class="flex flex-col mt-44">
           <p
-            class="lowercase font-firacode text-gray-200 font-semibold tracking-wider mx-auto z-10 text-6xl leading-normal"
+            class="lowercase font-firacode text-gray-200 font-semibold tracking-wider mx-auto z-10 text-6xl leading-normal scale-90 sm:scale-100"
           >
             software
           </p>
           <p
-            class="lowercase font-firacode text-gray-200 font-semibold tracking-wider mx-auto z-10 text-6xl"
+            class="lowercase font-firacode text-gray-200 font-semibold tracking-wider mx-auto z-10 text-6xl scale-90 sm:scale-100"
           >
             developer
           </p>
         </div>
       </div>
     </section>
-    <section class="flex flex-col mt-40">
-      <div class="flex gap-20 justify-center">
+    <section
+      id="about"
+      class="flex flex-col sm:mt-40 sm:pt-24 pt-12 scale-75 sm:scale-100"
+    >
+      <div class="flex sm:gap-20 justify-center">
         <p
           class="font-firacode text-emerald-500 font-semibold tracking-wide leading-loose"
         >
@@ -124,8 +127,11 @@
         </p>
       </article>
     </section>
-    <section class="flex flex-col">
-      <div class="my-10 flex justify-center">
+    <section
+      id="projects"
+      class="flex flex-col -my-36 sm:my-0 sm:pt-24 pt-12 scale-75 sm:scale-100"
+    >
+      <div class="sm:my-10 flex justify-center">
         <video
           class="rounded-xl opacity-85"
           controls="controls"
@@ -153,9 +159,40 @@
         ></video>
       </div>
     </section>
-    <section class="flex flex-col">
+    <section
+      id="connect"
+      class="flex min-h-96 sm:py-24 py-20 scale-75 sm:scale-100"
+    >
+      <div class="flex mx-auto gap-10 my-60">
+        <a class="my-auto scale-75" href="https://github.com/joelyles"
+          ><img
+            src="../public/images/github-mark-white.png"
+            alt="link to github profile"
+            height="72"
+            width="72"
+        /></a>
+        <a class="my-auto scale-75" href="https://www.linkedin.com/in/joelyles"
+          ><img
+            src="../public/images/In-White-72-┬«.png"
+            alt="link to linked in profile"
+        /></a>
+      </div>
+    </section>
+    <section class="flex flex-col scale-75 sm:scale-100">
+      <div class="flex-col mx-auto justify-center">
+        <a href="#top"
+          ><p
+            class="font-firacode text-emerald-500 font-semibold ml-0 text-3xl"
+          >
+            j
+          </p>
+          <p class="font-firacode text-emerald-700 font-thin ml-8 text-3xl">
+            l
+          </p>
+        </a>
+      </div>
       <p
-        class="font-firacode text-center text-emerald-700 font-thin flex justify-center my-5"
+        class="font-firacode text-center text-slate-200 font-thin flex justify-center my-5 opacity-15"
       >
         designed with figma
         <br />
@@ -174,3 +211,4 @@
     </section>
   </body>
 </html>
+sm:
