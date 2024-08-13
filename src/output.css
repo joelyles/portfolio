@@ -570,14 +570,19 @@ video {
   z-index: 10;
 }
 
-.-my-36 {
-  margin-top: -9rem;
-  margin-bottom: -9rem;
+.-my-52 {
+  margin-top: -13rem;
+  margin-bottom: -13rem;
 }
 
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
+}
+
+.my-0 {
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 
 .my-10 {
@@ -610,6 +615,35 @@ video {
   margin-bottom: auto;
 }
 
+.-my-3 {
+  margin-top: -0.75rem;
+  margin-bottom: -0.75rem;
+}
+
+.-my-36 {
+  margin-top: -9rem;
+  margin-bottom: -9rem;
+}
+
+.-my-64 {
+  margin-top: -16rem;
+  margin-bottom: -16rem;
+}
+
+.my-48 {
+  margin-top: 12rem;
+  margin-bottom: 12rem;
+}
+
+.my-36 {
+  margin-top: 9rem;
+  margin-bottom: 9rem;
+}
+
+.mb-12 {
+  margin-bottom: 3rem;
+}
+
 .ml-0 {
   margin-left: 0px;
 }
@@ -634,12 +668,28 @@ video {
   margin-top: 11rem;
 }
 
-.mb-12 {
-  margin-bottom: 3rem;
+.-mb-20 {
+  margin-bottom: -5rem;
 }
 
-.mt-6 {
-  margin-top: 1.5rem;
+.mt-24 {
+  margin-top: 6rem;
+}
+
+.mb-2 {
+  margin-bottom: 0.5rem;
+}
+
+.mb-10 {
+  margin-bottom: 2.5rem;
+}
+
+.mt-12 {
+  margin-top: 3rem;
+}
+
+.mt-16 {
+  margin-top: 4rem;
 }
 
 .flex {
@@ -658,24 +708,12 @@ video {
   width: 100%;
 }
 
-.max-w-lg {
-  max-width: 32rem;
-}
-
 .max-w-96 {
   max-width: 24rem;
 }
 
-.max-w-52 {
-  max-width: 13rem;
-}
-
-.max-w-72 {
-  max-width: 18rem;
-}
-
-.max-w-80 {
-  max-width: 20rem;
+.max-w-lg {
+  max-width: 32rem;
 }
 
 .-translate-x-1\/2 {
@@ -733,12 +771,6 @@ video {
   background-color: rgb(3 7 18 / var(--tw-bg-opacity));
 }
 
-.from-neutral-50 {
-  --tw-gradient-from: #fafafa var(--tw-gradient-from-position);
-  --tw-gradient-to: rgb(250 250 250 / 0) var(--tw-gradient-to-position);
-  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
-}
-
 .py-20 {
   padding-top: 5rem;
   padding-bottom: 5rem;
@@ -746,10 +778,6 @@ video {
 
 .pt-12 {
   padding-top: 3rem;
-}
-
-.pt-4 {
-  padding-top: 1rem;
 }
 
 .text-center {
@@ -826,11 +854,6 @@ video {
   color: rgb(226 232 240 / var(--tw-text-opacity));
 }
 
-.text-neutral-50 {
-  --tw-text-opacity: 1;
-  color: rgb(250 250 250 / var(--tw-text-opacity));
-}
-
 .opacity-15 {
   opacity: 0.15;
 }
@@ -848,6 +871,11 @@ video {
   .sm\:my-10 {
     margin-top: 2.5rem;
     margin-bottom: 2.5rem;
+  }
+
+  .sm\:my-20 {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
   }
 
   .sm\:mt-20 {
