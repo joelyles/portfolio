@@ -37,12 +37,13 @@
       <header class="mt-10 mx-auto">
         <div class="flex-col">
           <p
-            id="name"
-            class="font-firacode text-emerald-500 font-semibold text-3xl"
+            class="finame font-firacode text-emerald-500 font-semibold text-3xl"
           >
             joe
           </p>
-          <p class="font-firacode text-emerald-700 font-thin ml-12 text-3xl">
+          <p
+            class="laname font-firacode text-emerald-700 font-thin ml-12 text-3xl"
+          >
             lyles
           </p>
         </div>
@@ -50,19 +51,19 @@
           <div class="flex flex-col my-10">
             <a
               href="#about"
-              class="font-firacode text-gray-200 tracking-widest mx-auto my-3"
+              class="menu font-firacode text-gray-200 tracking-widest mx-auto my-3"
             >
               about
             </a>
             <a
               href="#projects"
-              class="font-firacode text-gray-200 tracking-widest mx-auto my-3"
+              class="menu font-firacode text-gray-200 tracking-widest mx-auto my-3"
             >
               projects
             </a>
             <a
               href="#connect"
-              class="font-firacode text-gray-200 tracking-widest mx-auto my-3"
+              class="menu font-firacode text-gray-200 tracking-widest mx-auto my-3"
             >
               connect
             </a>
@@ -72,13 +73,13 @@
     </section>
     <section class="min-h-96 sm:my-20 my-0">
       <div class="absolute bg-gray-900 w-full h-96 mt-12">
-        <img
+        <!-- <img
           class="absolute left-1/2 transform -translate-x-1/2 -top-12 rounded-full scale-90 sm:scale-100"
           src="../public/images/jl_image_.jpg"
           alt=""
           width="300"
           height="300"
-        />
+        /> -->
         <div class="flex flex-col mt-44">
           <p
             class="lowercase font-firacode text-gray-200 font-semibold tracking-wider mx-auto z-10 text-6xl leading-normal scale-90 sm:scale-100"
@@ -269,14 +270,32 @@
   let toggle = document.querySelector("#toggle");
   let mainBg = document.querySelector("#main");
   let mode = document.querySelector("#mode");
+  let finame = document.querySelector(".finame");
+  let laname = document.querySelector(".laname");
+  let menu = document.querySelectorAll("menu");
 
   mode.addEventListener("click", function () {
     mainBg.classList.contains("bg-gray-950")
-      ? (mainBg.classList = "bg-gray-300")
+      ? (mainBg.classList = "bg-gray-400")
       : (mainBg.classList = "bg-gray-950");
     !toggle.classList.contains("translate-x-5")
       ? toggle.classList.add("translate-x-5")
       : (toggle.classList =
           "flex self-center bg-slate-950 mx-1 h-6 w-6 rounded-full");
+    !finame.classList.contains("text-gray-950")
+      ? finame.classList.add("text-gray-950") &&
+        finame.classList.remove("text-emerald-500")
+      : (finame.classList =
+          "font-firacode text-emerald-500 font-semibold text-3xl");
+    !laname.classList.contains("text-gray-950")
+      ? laname.classList.add("text-gray-950") &&
+        laname.classList.remove("text-emerald-700")
+      : (laname.classList =
+          "laname font-firacode text-emerald-700 font-thin ml-12 text-3xl");
+    !menu.classList.contains("text-gray-800")
+      ? menu.classList.add("text-gray-800") &&
+        menu.classList.remove("text-gray-200")
+      : (menu.classList =
+          "menu font-firacode text-gray-200 tracking-widest mx-auto my-3");
   });
 </script>
