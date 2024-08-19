@@ -100,12 +100,14 @@
     >
       <div class="flex sm:gap-20 gap-10 justify-center">
         <p
+          id="aboutle"
           class="font-firacode text-emerald-500 font-semibold tracking-wide leading-loose"
         >
           HTML/CSS<br />JavaScript<br />React<br />Tailwindcss<br />Node JS<br />Express
           JS<br />MongoDB
         </p>
         <p
+          id="aboutri"
           class="text-right font-firacode text-emerald-700 font-thin tracking-wide leading-loose"
         >
           VS Code<br />GitHub<br />React<br />Figma<br />MS Power Automate<br />Squarespace
@@ -238,16 +240,19 @@
       <div class="flex-col mx-auto justify-center">
         <a href="#top"
           ><p
-            class="font-firacode text-emerald-500 font-semibold ml-0 text-3xl"
+            class="fiini font-firacode text-emerald-500 font-semibold ml-0 text-3xl"
           >
             j
           </p>
-          <p class="font-firacode text-emerald-700 font-thin ml-8 text-3xl">
+          <p
+            class="laini font-firacode text-emerald-700 font-thin ml-8 text-3xl"
+          >
             l
           </p>
         </a>
       </div>
       <p
+        id="credits"
         class="font-firacode text-center text-slate-200 font-thin flex justify-center my-5 opacity-15"
       >
         designed with figma
@@ -272,7 +277,11 @@
   let mode = document.querySelector("#mode");
   let finame = document.querySelector(".finame");
   let laname = document.querySelector(".laname");
-  let menu = document.querySelectorAll("menu");
+  let aboutri = document.querySelector("#aboutri");
+  let aboutle = document.querySelector("#aboutle");
+  let fiini = document.querySelector(".fiini");
+  let laini = document.querySelector(".laini");
+  let credits = document.querySelector("#credits");
 
   mode.addEventListener("click", function () {
     mainBg.classList.contains("bg-gray-950")
@@ -282,20 +291,40 @@
       ? toggle.classList.add("translate-x-5")
       : (toggle.classList =
           "flex self-center bg-slate-950 mx-1 h-6 w-6 rounded-full");
-    !finame.classList.contains("text-gray-950")
-      ? finame.classList.add("text-gray-950") &&
+    !finame.classList.contains("text-gray-900")
+      ? finame.classList.add("text-gray-900") &&
         finame.classList.remove("text-emerald-500")
       : (finame.classList =
           "font-firacode text-emerald-500 font-semibold text-3xl");
-    !laname.classList.contains("text-gray-950")
-      ? laname.classList.add("text-gray-950") &&
+    !laname.classList.contains("text-gray-900")
+      ? laname.classList.add("text-gray-900") &&
         laname.classList.remove("text-emerald-700")
       : (laname.classList =
           "laname font-firacode text-emerald-700 font-thin ml-12 text-3xl");
-    !menu.classList.contains("text-gray-800")
-      ? menu.classList.add("text-gray-800") &&
-        menu.classList.remove("text-gray-200")
-      : (menu.classList =
-          "menu font-firacode text-gray-200 tracking-widest mx-auto my-3");
+    !aboutle.classList.contains("text-gray-900")
+      ? aboutle.classList.add("text-gray-900") &&
+        aboutle.classList.remove("text-emerald-500")
+      : (aboutle.classList =
+          "font-firacode text-emerald-500 font-semibold tracking-wide leading-loose");
+    !aboutri.classList.contains("text-gray-900")
+      ? aboutri.classList.add("text-gray-900") &&
+        aboutri.classList.remove("text-emerald-700")
+      : (aboutri.classList =
+          "text-right font-firacode text-emerald-700 font-thin tracking-wide leading-loose");
+    !fiini.classList.contains("text-gray-900")
+      ? fiini.classList.add("text-gray-900") &&
+        fiini.classList.remove("text-emerald-500")
+      : (fiini.classList =
+          "fiini font-firacode text-emerald-500 font-semibold ml-0 text-3xl");
+    !laini.classList.contains("text-gray-900")
+      ? laini.classList.add("text-gray-900") &&
+        laini.classList.remove("text-emerald-700")
+      : (laini.classList =
+          "laini font-firacode text-emerald-700 font-thin ml-8 text-3xl");
+    credits.classList.contains("opacity-15")
+      ? credits.classList.add("opacity-100") &&
+        credits.classList.remove("opacity-15")
+      : (credits.classList =
+          "font-firacode text-center text-slate-200 font-thin flex justify-center my-5 opacity-15");
   });
 </script>
