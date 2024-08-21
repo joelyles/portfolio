@@ -16,8 +16,8 @@
     bg color = gray 950
     light green = emerald 500
     dark green = emerald 700
-    light text = slate 200
-    hero bg = gray 900
+    light text & alt bg = slate 200
+    banner bg & dark text = gray 900
    -->
   <body id="main" class="bg-gray-950">
     <section class="absolute">
@@ -47,26 +47,23 @@
             lyles
           </p>
         </div>
-        <nav class="">
+        <nav>
           <div class="flex flex-col my-10">
-            <a
-              href="#about"
+            <p
               class="menu font-firacode text-gray-200 tracking-widest mx-auto my-3"
             >
-              about
-            </a>
-            <a
-              href="#projects"
+              <a href="#about"> about </a>
+            </p>
+            <p
               class="menu font-firacode text-gray-200 tracking-widest mx-auto my-3"
             >
-              projects
-            </a>
-            <a
-              href="#connect"
+              <a href="#projects"> projects </a>
+            </p>
+            <p
               class="menu font-firacode text-gray-200 tracking-widest mx-auto my-3"
             >
-              connect
-            </a>
+              <a href="#connect"> connect </a>
+            </p>
           </div>
         </nav>
       </header>
@@ -115,7 +112,8 @@
       </div>
       <article class="flex justify-center sm:my-18 mt-24">
         <p
-          class="font-firacode text-center max-w-lg text-slate-200 tracking-wide"
+          id="parag"
+          class="font-firacode text-center max-w-lg text-gray-200 tracking-wide"
         >
           This is a short paragraph about myself. Nothing fancy, just some
           simple words. I'm one of those who actually enjoys reading the
@@ -159,7 +157,7 @@
           src="../public/videos/site_demo_1.mov"
         ></video>
         <p
-          class="flex flex-col mx-auto font-firacode text-slate-200 text-center max-w-96 mb-12"
+          class="projdes flex flex-col mx-auto font-firacode text-gray-200 text-center max-w-96 my-6"
         >
           MERN stack registration app featuring MongoDB, Express JS, React, and
           Node JS
@@ -185,7 +183,7 @@
           src="../public/videos/site_demo_2.mov"
         ></video>
         <p
-          class="flex flex-col mx-auto font-firacode text-slate-200 text-center max-w-96 mb-12"
+          class="projdes flex flex-col mx-auto font-firacode text-gray-200 text-center max-w-96 my-6"
         >
           React app api data fetch and display
           <br />
@@ -205,7 +203,7 @@
           src="../public/videos/site_demo_3.mov"
         ></video>
         <p
-          class="flex flex-col mx-auto font-firacode text-slate-200 text-center max-w-96 mb-12"
+          class="projdes flex flex-col mx-auto font-firacode text-gray-200 text-center max-w-96 my-6"
         >
           JavaScript quiz app featuring conditional logic for checking answers
           <br />
@@ -219,9 +217,9 @@
     </section>
     <section
       id="connect"
-      class="flex min-h-96 sm:py-24 py-20 scale-75 sm:scale-100"
+      class="flex min-h-96 sm:py-24 py-20 scale-100 sm:scale-100"
     >
-      <div class="flex mx-auto gap-10 my-36">
+      <div class="flex bg-gray-900 w-full h-28 justify-center gap-10 my-36">
         <a class="my-auto scale-75" href="https://github.com/joelyles"
           ><img
             src="../public/images/github-mark-white.png"
@@ -253,7 +251,7 @@
       </div>
       <p
         id="credits"
-        class="font-firacode text-center text-slate-200 font-thin flex justify-center my-5 opacity-15"
+        class="font-firacode text-center text-gray-200 font-thin flex justify-center my-5 opacity-15"
       >
         designed with figma
         <br />
@@ -277,15 +275,18 @@
   let mode = document.querySelector("#mode");
   let finame = document.querySelector(".finame");
   let laname = document.querySelector(".laname");
+  let menu = document.querySelectorAll(".menu");
   let aboutri = document.querySelector("#aboutri");
   let aboutle = document.querySelector("#aboutle");
+  let parag = document.querySelector("#parag");
+  let projdes = document.querySelectorAll(".projdes");
   let fiini = document.querySelector(".fiini");
   let laini = document.querySelector(".laini");
   let credits = document.querySelector("#credits");
 
   mode.addEventListener("click", function () {
     mainBg.classList.contains("bg-gray-950")
-      ? (mainBg.classList = "bg-gray-400")
+      ? (mainBg.classList = "bg-gray-200")
       : (mainBg.classList = "bg-gray-950");
     !toggle.classList.contains("translate-x-5")
       ? toggle.classList.add("translate-x-5")
@@ -301,6 +302,13 @@
         laname.classList.remove("text-emerald-700")
       : (laname.classList =
           "laname font-firacode text-emerald-700 font-thin ml-12 text-3xl");
+    for (i = 0; i < menu.length; i++) {
+      !menu[i].classList.contains("text-gray-900")
+        ? menu[i].classList.add("text-gray-900") &&
+          menu[i].classList.remove("text-gray-200")
+        : (menu[i].classList =
+            "menu font-firacode text-gray-200 tracking-widest mx-auto my-3");
+    }
     !aboutle.classList.contains("text-gray-900")
       ? aboutle.classList.add("text-gray-900") &&
         aboutle.classList.remove("text-emerald-500")
@@ -311,6 +319,18 @@
         aboutri.classList.remove("text-emerald-700")
       : (aboutri.classList =
           "text-right font-firacode text-emerald-700 font-thin tracking-wide leading-loose");
+    !parag.classList.contains("text-gray-900")
+      ? parag.classList.add("text-gray-900") &&
+        parag.classList.remove("text-gray-200")
+      : (parag.classList =
+          "font-firacode text-center max-w-lg text-gray-200 tracking-wide");
+    for (i = 0; i < projdes.length; i++) {
+      !projdes[i].classList.contains("text-gray-900")
+        ? projdes[i].classList.add("text-gray-900") &&
+          projdes[i].classList.remove("text-gray-200")
+        : (projdes[i].classList =
+            "projdes flex flex-col mx-auto font-firacode text-gray-200 text-center max-w-96 my-6");
+    }
     !fiini.classList.contains("text-gray-900")
       ? fiini.classList.add("text-gray-900") &&
         fiini.classList.remove("text-emerald-500")
@@ -322,9 +342,14 @@
       : (laini.classList =
           "laini font-firacode text-emerald-700 font-thin ml-8 text-3xl");
     credits.classList.contains("opacity-15")
-      ? credits.classList.add("opacity-100") &&
+      ? credits.classList.add("opacity-50") &&
         credits.classList.remove("opacity-15")
       : (credits.classList =
           "font-firacode text-center text-slate-200 font-thin flex justify-center my-5 opacity-15");
+    !credits.classList.contains("text-gray-900")
+      ? credits.classList.add("text-gray-900") &&
+        credits.classList.remove("text-gray-200")
+      : (credits.classList =
+          "font-firacode text-center text-gray-200 font-thin flex justify-center my-5 opacity-15");
   });
 </script>
