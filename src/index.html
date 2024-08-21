@@ -283,6 +283,7 @@
   let fiini = document.querySelector(".fiini");
   let laini = document.querySelector(".laini");
   let credits = document.querySelector("#credits");
+  let video = document.querySelectorAll("video");
 
   mode.addEventListener("click", function () {
     mainBg.classList.contains("bg-gray-950")
@@ -352,4 +353,8 @@
       : (credits.classList =
           "font-firacode text-center text-gray-200 font-thin flex justify-center my-5 opacity-15");
   });
+
+  for (i = 0; i < video.length; i++) {
+    video[i].playbackRate = 2.2;
+  }
 </script>
