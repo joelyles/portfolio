@@ -115,6 +115,19 @@
           id="parag"
           class="font-firacode text-center max-w-lg text-gray-200 tracking-wide"
         >
+          I prefer not to write about myself, but since I happen to be doing
+          that very thing, let me paint a picture that depicts my approach to
+          contributing value in my work. I will use the following headings to
+          accomplish this: clairity, honesty, and diligent in the details.
+          <br /><br />
+          1. Clairity
+          <br /><br />
+          If you have ever fallen short of acheiving an outcome due to no or
+          incomplete instructions, you might understand the value of a clear
+          prompt. Worse yet, if you have ever caused someone else to fail due to
+          your lack of setting clear expectations, you might know the value of
+          clear communication better still.
+          <br /><br />
           This is a short paragraph about myself. Nothing fancy, just some
           simple words. I'm one of those who actually enjoys reading the
           instructions. No, not for everything - but I definitely value the
@@ -266,95 +279,94 @@
         copyright joe lyles 2024
       </p>
     </section>
+    <script>
+      let toggle = document.querySelector("#toggle");
+      let mainBg = document.querySelector("#main");
+      let mode = document.querySelector("#mode");
+      let finame = document.querySelector(".finame");
+      let laname = document.querySelector(".laname");
+      let menu = document.querySelectorAll(".menu");
+      let aboutri = document.querySelector("#aboutri");
+      let aboutle = document.querySelector("#aboutle");
+      let parag = document.querySelector("#parag");
+      let projdes = document.querySelectorAll(".projdes");
+      let fiini = document.querySelector(".fiini");
+      let laini = document.querySelector(".laini");
+      let credits = document.querySelector("#credits");
+      let video = document.querySelectorAll("video");
+
+      mode.addEventListener("click", function () {
+        mainBg.classList.contains("bg-gray-950")
+          ? (mainBg.classList = "bg-gray-200")
+          : (mainBg.classList = "bg-gray-950");
+        !toggle.classList.contains("translate-x-5")
+          ? toggle.classList.add("translate-x-5")
+          : (toggle.classList =
+              "flex self-center bg-slate-950 mx-1 h-6 w-6 rounded-full");
+        !finame.classList.contains("text-gray-900")
+          ? finame.classList.add("text-gray-900") &&
+            finame.classList.remove("text-emerald-500")
+          : (finame.classList =
+              "font-firacode text-emerald-500 font-semibold text-3xl");
+        !laname.classList.contains("text-gray-900")
+          ? laname.classList.add("text-gray-900") &&
+            laname.classList.remove("text-emerald-700")
+          : (laname.classList =
+              "laname font-firacode text-emerald-700 font-thin ml-12 text-3xl");
+        for (i = 0; i < menu.length; i++) {
+          !menu[i].classList.contains("text-gray-900")
+            ? menu[i].classList.add("text-gray-900") &&
+              menu[i].classList.remove("text-gray-200")
+            : (menu[i].classList =
+                "menu font-firacode text-gray-200 tracking-widest mx-auto my-3");
+        }
+        !aboutle.classList.contains("text-gray-900")
+          ? aboutle.classList.add("text-gray-900") &&
+            aboutle.classList.remove("text-emerald-500")
+          : (aboutle.classList =
+              "font-firacode text-emerald-500 font-semibold tracking-wide leading-loose");
+        !aboutri.classList.contains("text-gray-900")
+          ? aboutri.classList.add("text-gray-900") &&
+            aboutri.classList.remove("text-emerald-700")
+          : (aboutri.classList =
+              "text-right font-firacode text-emerald-700 font-thin tracking-wide leading-loose");
+        !parag.classList.contains("text-gray-900")
+          ? parag.classList.add("text-gray-900") &&
+            parag.classList.remove("text-gray-200")
+          : (parag.classList =
+              "font-firacode text-center max-w-lg text-gray-200 tracking-wide");
+        for (i = 0; i < projdes.length; i++) {
+          !projdes[i].classList.contains("text-gray-900")
+            ? projdes[i].classList.add("text-gray-900") &&
+              projdes[i].classList.remove("text-gray-200")
+            : (projdes[i].classList =
+                "projdes flex flex-col mx-auto font-firacode text-gray-200 text-center max-w-96 my-6");
+        }
+        !fiini.classList.contains("text-gray-900")
+          ? fiini.classList.add("text-gray-900") &&
+            fiini.classList.remove("text-emerald-500")
+          : (fiini.classList =
+              "fiini font-firacode text-emerald-500 font-semibold ml-0 text-3xl");
+        !laini.classList.contains("text-gray-900")
+          ? laini.classList.add("text-gray-900") &&
+            laini.classList.remove("text-emerald-700")
+          : (laini.classList =
+              "laini font-firacode text-emerald-700 font-thin ml-8 text-3xl");
+        credits.classList.contains("opacity-15")
+          ? credits.classList.add("opacity-50") &&
+            credits.classList.remove("opacity-15")
+          : (credits.classList =
+              "font-firacode text-center text-slate-200 font-thin flex justify-center my-5 opacity-15");
+        !credits.classList.contains("text-gray-900")
+          ? credits.classList.add("text-gray-900") &&
+            credits.classList.remove("text-gray-200")
+          : (credits.classList =
+              "font-firacode text-center text-gray-200 font-thin flex justify-center my-5 opacity-15");
+      });
+
+      for (i = 0; i < video.length; i++) {
+        video[i].playbackRate = 2.2;
+      }
+    </script>
   </body>
 </html>
-
-<script>
-  let toggle = document.querySelector("#toggle");
-  let mainBg = document.querySelector("#main");
-  let mode = document.querySelector("#mode");
-  let finame = document.querySelector(".finame");
-  let laname = document.querySelector(".laname");
-  let menu = document.querySelectorAll(".menu");
-  let aboutri = document.querySelector("#aboutri");
-  let aboutle = document.querySelector("#aboutle");
-  let parag = document.querySelector("#parag");
-  let projdes = document.querySelectorAll(".projdes");
-  let fiini = document.querySelector(".fiini");
-  let laini = document.querySelector(".laini");
-  let credits = document.querySelector("#credits");
-  let video = document.querySelectorAll("video");
-
-  mode.addEventListener("click", function () {
-    mainBg.classList.contains("bg-gray-950")
-      ? (mainBg.classList = "bg-gray-200")
-      : (mainBg.classList = "bg-gray-950");
-    !toggle.classList.contains("translate-x-5")
-      ? toggle.classList.add("translate-x-5")
-      : (toggle.classList =
-          "flex self-center bg-slate-950 mx-1 h-6 w-6 rounded-full");
-    !finame.classList.contains("text-gray-900")
-      ? finame.classList.add("text-gray-900") &&
-        finame.classList.remove("text-emerald-500")
-      : (finame.classList =
-          "font-firacode text-emerald-500 font-semibold text-3xl");
-    !laname.classList.contains("text-gray-900")
-      ? laname.classList.add("text-gray-900") &&
-        laname.classList.remove("text-emerald-700")
-      : (laname.classList =
-          "laname font-firacode text-emerald-700 font-thin ml-12 text-3xl");
-    for (i = 0; i < menu.length; i++) {
-      !menu[i].classList.contains("text-gray-900")
-        ? menu[i].classList.add("text-gray-900") &&
-          menu[i].classList.remove("text-gray-200")
-        : (menu[i].classList =
-            "menu font-firacode text-gray-200 tracking-widest mx-auto my-3");
-    }
-    !aboutle.classList.contains("text-gray-900")
-      ? aboutle.classList.add("text-gray-900") &&
-        aboutle.classList.remove("text-emerald-500")
-      : (aboutle.classList =
-          "font-firacode text-emerald-500 font-semibold tracking-wide leading-loose");
-    !aboutri.classList.contains("text-gray-900")
-      ? aboutri.classList.add("text-gray-900") &&
-        aboutri.classList.remove("text-emerald-700")
-      : (aboutri.classList =
-          "text-right font-firacode text-emerald-700 font-thin tracking-wide leading-loose");
-    !parag.classList.contains("text-gray-900")
-      ? parag.classList.add("text-gray-900") &&
-        parag.classList.remove("text-gray-200")
-      : (parag.classList =
-          "font-firacode text-center max-w-lg text-gray-200 tracking-wide");
-    for (i = 0; i < projdes.length; i++) {
-      !projdes[i].classList.contains("text-gray-900")
-        ? projdes[i].classList.add("text-gray-900") &&
-          projdes[i].classList.remove("text-gray-200")
-        : (projdes[i].classList =
-            "projdes flex flex-col mx-auto font-firacode text-gray-200 text-center max-w-96 my-6");
-    }
-    !fiini.classList.contains("text-gray-900")
-      ? fiini.classList.add("text-gray-900") &&
-        fiini.classList.remove("text-emerald-500")
-      : (fiini.classList =
-          "fiini font-firacode text-emerald-500 font-semibold ml-0 text-3xl");
-    !laini.classList.contains("text-gray-900")
-      ? laini.classList.add("text-gray-900") &&
-        laini.classList.remove("text-emerald-700")
-      : (laini.classList =
-          "laini font-firacode text-emerald-700 font-thin ml-8 text-3xl");
-    credits.classList.contains("opacity-15")
-      ? credits.classList.add("opacity-50") &&
-        credits.classList.remove("opacity-15")
-      : (credits.classList =
-          "font-firacode text-center text-slate-200 font-thin flex justify-center my-5 opacity-15");
-    !credits.classList.contains("text-gray-900")
-      ? credits.classList.add("text-gray-900") &&
-        credits.classList.remove("text-gray-200")
-      : (credits.classList =
-          "font-firacode text-center text-gray-200 font-thin flex justify-center my-5 opacity-15");
-  });
-
-  for (i = 0; i < video.length; i++) {
-    video[i].playbackRate = 2.2;
-  }
-</script>
