@@ -4,7 +4,7 @@
   "description": "portfolio",
   "main": "index.js",
   "scripts": {
-    "test": "start"
+    "build": "npx tailwindcss -i ./src/input.css -o ./src/output.css --watch"
   },
   "author": "Joe Lyles",
   "license": "ISC",
